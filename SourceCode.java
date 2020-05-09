@@ -21,11 +21,5 @@ public class Solutions {
 		System.out.println(mexican(n,k,t));
 	}
 
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		System.out.println("Input \"1\" to run the program");
-		if (Integer.parseInt(s.nextLine())==1) {
-			runMexican();
-		}
-	}
+	
 }
