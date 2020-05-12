@@ -28,29 +28,4 @@ public class Solutions {
 			runMexican();
 		}
 	}
-
-	public static String createPhoneNumber(int[] numbers) {
-   String phoneNambah = "";
-   int counter = 0;
-   for(int i = 0; i < 14; i++){
-   
-      if(i == 0 || i == 4 || i == 5 || i == 9){
-       if(i == 0)
-           phoneNambah = phoneNambah + "(";
-        if(i == 4)
-            phoneNambah = phoneNambah + ")";
-        if(i == 5)
-            phoneNambah = phoneNambah + " ";
-        if(i == 9)
-            phoneNambah = phoneNambah + "-";
-        }else{
-        
-        phoneNambah = phoneNambah + (numbers[counter]) + "";
-        
-        counter++;
-        }//else
-        
-   }//for loop
-   return phoneNambah;
-  }
 }
