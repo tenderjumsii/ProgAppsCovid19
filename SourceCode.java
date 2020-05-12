@@ -29,4 +29,29 @@ public class Solutions {
 		}
 	}
 
+	 public int solution(int number) {
+    
+    int sum = 0;
+    for(int x = 0; x < number; x++){
+      
+        if(x%3 == 0){
+          if(x%5 == 0){
+            sum = sum + x;
+          }else{
+            sum = sum + x;
+          }
+        }else if(x%5 == 0){
+          if(x%3 == 0){
+            sum = sum + x;
+          }else{
+          sum = sum + x;
+          }
+        }
+        
+    }//for loop
+    
+    return sum;
+    
+    
+  }
 }
