@@ -10,23 +10,35 @@ public class Solutions {
 		}
 	}
 
-	public static void runMexican() {
-		Scanner s = new Scanner(System.in);
-		String s1 = s.nextLine();
-		String[] s2 = s1.split(" ");
-		int n,k,t;
-		n = Integer.parseInt(s2[0]);
-		k = Integer.parseInt(s2[1]);
-		t = Integer.parseInt(s2[2]);
-		System.out.println(mexican(n,k,t));
-	}
+	
 
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		System.out.println("Input \"1\" to run the program");
-		if (Integer.parseInt(s.nextLine())==1) {
-			runMexican();
-		}
-	}
+	 public int solution(int number) {
+    
+    int sum = 0;
+    for(int x = 0; x < number; x++){
+      
+        if(x%3 == 0){
+          if(x%5 == 0){
+            sum = sum + x;
+          }else{
+            sum = sum + x;
+          }
+        }else if(x%5 == 0){
+          if(x%3 == 0){
+            sum = sum + x;
+          }else{
+          sum = sum + x;
+          }
+        }
+        
+    }//for loop
+    
+    return sum;
+    
+    
+  }
 
+  public static void TryConflict(){
+  	System.out.print("Conflicter");
+  }
 }
